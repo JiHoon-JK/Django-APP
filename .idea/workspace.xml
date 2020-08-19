@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="054afa5b-5031-4d56-967e-9d3d8f6d1f5f" name="Default Changelist" comment="" />
+    <list default="true" id="054afa5b-5031-4d56-967e-9d3d8f6d1f5f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch99/Bookmark_site/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch99/mysite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch99/Bookmark_site/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch99/mysite/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch99/Bookmark_site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch99/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch99/Bookmark_site/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch99/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch99/Bookmark_site/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch99/mysite/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch99/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch99/manage.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1g2hJjQ2Zghryz68uCXxgEKnri7" />
   <component name="ProjectViewState">
@@ -15,7 +28,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Sparta/ART_CINEMA_200411" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
