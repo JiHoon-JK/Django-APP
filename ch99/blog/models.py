@@ -14,7 +14,7 @@ class Post(models.Model):
         verbose_name='post'
         verbose_name_plural='posts'
         db_table = 'blog_posts'
-        ordering = ('-modify_dt')
+        ordering = ('-modify_dt',)
 
     def __str__(self):
         return self.title
