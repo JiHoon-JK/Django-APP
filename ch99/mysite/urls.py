@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from mysite.views import HomeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-		# include() 함수를 통해서, 북마크앱/블로그앱의 APP_URLCONF로 처리를 위임한다.
-		path('bookmark/', include('bookmark.urls')),
-		path('blog/', include('blog.urls')),
+	# include() 함수를 통해서, 북마크앱/블로그앱의 APP_URLCONF로 처리를 위임한다.
+	path('bookmark/', include('bookmark.urls')),
+	path('blog/', include('blog.urls')),
+	path('', HomeView.as_view(), name='home'),
 ]
 
