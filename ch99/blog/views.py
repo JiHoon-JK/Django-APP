@@ -1,5 +1,5 @@
 from django.views.generic import ListView, DetailView
-from django.views.generic.dates import ArchiveIndexView, YearArchiveView, MonthArchiveIndexView
+from django.views.generic.dates import ArchiveIndexView, YearArchiveView, MonthArchiveView
 from django.views.generic.dates import DayArchiveView, TodayArchiveView
 
 from blog.models import Post
@@ -7,6 +7,7 @@ from blog.models import Post
 # Create your views here.
 class PostLV(ListView):
     model = Post
+    # blog라는 폴더 아래, post_all.html 이 있어야한다.
     template_name = 'blog/post_all.html'
     # 객체 리스트에 대한 컨텍스트 변수명을 posts 로 지정한다.
     context_object_name = 'posts'
@@ -26,7 +27,7 @@ class PostYAV(YearArchiveView):
     # True면, 객체의 리스틀 만들어서 템플릿에 넘겨준다. False면, 디폴트.
     make_object_list = True
 
-class PostMAV(MonthArchiveIndexView):
+class PostMAV(MonthArchiveView):
     model = Post
     date_field = 'modify_dt'
 
