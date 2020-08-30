@@ -21,8 +21,7 @@ class Photo(models.Model):
     album = models.ForeignKey(Album, on_delete=models.CASCADE)
     title = models.CharField('Title', max_length=30)
     description = models.TextField('Photo Description', blank=True)
-    image = ThumbnailImageField(up
-    load_to='photo/%Y/%m')
+    image = ThumbnailImageField(upload_to='photo/%Y/%m')
     upload_dt = models.DateTimeField('Upload Date', auto_now_add=True)
 
     class Meta:

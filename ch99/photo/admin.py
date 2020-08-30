@@ -11,7 +11,7 @@ class PhotoInline(admin.StackedInline):
 @admin.register(Album)
 class AlbumAdmin(admin.ModelAdmin):
     #앨범 객체 수정 화면을 보여줄 때, PhotoInline 클래스에서 정의한 사항을 같이 보여준다.
-    inlines = (PhotoInline)
+    inlines = (PhotoInline,)
     list_display = ('id', 'name', 'description')
 
 # admin.site.register() 함수를 사용해도 되지만 데코레이터를 사용하면 간단하다.

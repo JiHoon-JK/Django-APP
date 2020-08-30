@@ -16,12 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from mysite.views import HomeView
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 	# include() 함수를 통해서, 북마크앱/블로그앱의 APP_URLCONF로 처리를 위임한다.
+	path('', HomeView.as_view(), name='home'),
 	path('bookmark/', include('bookmark.urls')),
 	path('blog/', include('blog.urls')),
-	path('', HomeView.as_view(), name='home'),
-]
+	path('photo/', include('photo.urls')),
+
+] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
 
