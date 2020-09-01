@@ -41,10 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bookmark.apps.BookmarkConfig',
-    'blog.apps.BlogConfig',
     'taggit.apps.TaggitAppConfig',
     'taggit_templatetags2',
+    'widget_tweaks',
+    'bookmark.apps.BookmarkConfig',
+    'blog.apps.BlogConfig',
     'photo.apps.PhotoConfig',
 ]
 
@@ -137,6 +138,9 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#LOGIN_URL = '/acconts/login/'
+LOGIN_REDIRECT_URL = '/'
 
 # TAGGIT
 TAGGIT_CASE_INSENSITIVE = True
